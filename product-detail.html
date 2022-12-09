@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Basic Page Info -->
+	<meta charset="utf-8">
+	<title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
+
+	<!-- Site favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="vendors/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="vendors/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="vendors/images/favicon-16x16.png">
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="vendors/styles/core.css">
+	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
+	<!-- Slick Slider css -->
+	<link rel="stylesheet" type="text/css" href="src/plugins/slick/slick.css">
+	<!-- bootstrap-touchspin css -->
+	<link rel="stylesheet" type="text/css" href="src/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.css">
+	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
+</head>
+<body>
+
+	<div class="header">
+		<div class="header-left">
+			<div class="menu-icon dw dw-menu"></div>
+			<div class="search-toggle-icon dw dw-search2" data-toggle="header_search"></div>
+			<div class="header-search">
+				<form>
+					<div class="form-group mb-0">
+						<i class="dw dw-search2 search-icon"></i>
+						<input type="text" class="form-control search-input" placeholder="Search Here">
+						<div class="dropdown">
+							<a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
+								<i class="ion-arrow-down-c"></i>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<div class="form-group row">
+									<label class="col-sm-12 col-md-2 col-form-label">From</label>
+									<div class="col-sm-12 col-md-10">
+										<input class="form-control form-control-sm form-control-line" type="text">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-sm-12 col-md-2 col-form-label">To</label>
+									<div class="col-sm-12 col-md-10">
+										<input class="form-control form-control-sm form-control-line" type="text">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-sm-12 col-md-2 col-form-label">Subject</label>
+									<div class="col-sm-12 col-md-10">
+										<input class="form-control form-control-sm form-control-line" type="text">
+									</div>
+								</div>
+								<div class="text-right">
+									<button class="btn btn-primary">Search</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="header-right">
+			<div class="dashboard-setting user-notification">
+				<div class="dropdown">
+				</div>
+			</div>
+			<div class="user-notification">
+				<div class="dropdown">
+					<a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
+						<i class="icon-copy dw dw-notification"></i>
+						<span class="badge notification-active"></span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<div class="notification-list mx-h-350 customscroll">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="vendors/images/img.jpg" alt="">
+										<h3>John Doe</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="vendors/images/photo1.jpg" alt="">
+										<h3>Lea R. Frith</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="vendors/images/photo2.jpg" alt="">
+										<h3>Erik L. Richards</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="vendors/images/photo3.jpg" alt="">
+										<h3>John Doe</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="vendors/images/photo4.jpg" alt="">
+										<h3>Renee I. Hansen</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="vendors/images/img.jpg" alt="">
+										<h3>Vicki M. Coleman</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="user-info-dropdown">
+				<div class="dropdown">
+					<a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+						<span class="user-icon">
+							<img src="vendors/images/photo1.jpg" alt="">
+						</span>
+						<span class="user-name">Ross C. Lopez</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+						<a class="dropdown-item" href="profile.html"><i class="dw dw-user1"></i> Profile</a>
+						<a class="dropdown-item" href="login.html"><i class="dw dw-logout"></i> Log Out</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="left-side-bar">
+		<div class="brand-logo">
+			<a href="index.html">
+				<h1 class="dark-logo"><span class="insp">I</span> Ready</h1>
+				<h1 class="light-logo"><span class="insp">I</span>Ready</h1>
+			</a>
+			<div class="close-sidebar" data-toggle="left-sidebar-close">
+				<i class="ion-close-round"></i>
+			</div>
+		</div>
+		<div class="menu-block customscroll">
+			<div class="sidebar-menu">
+				<ul id="accordion-menu">
+					<li class="dropdown">
+						<a href="index.html" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-house-1"></span><span class="mtext">Home</span>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="form.html" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-edit2"></span><span class="mtext">Form</span>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw dw-library"></span><span class="mtext">Tables</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="basic-table.html">Ranking</a></li>
+							<li><a href="datatable.html">DataBase</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw dw-right-arrow1"></span><span class="mtext">Personal</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="login.html">Login</a></li>
+							<li><a href="register.html">Register</a></li>
+							<li><a href="profile.html">Profile</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw dw-copy"></span><span class="mtext">Purchase</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="product.html">Product</a></li>
+							<li><a href="product-detail.html">Product Detail</a></li>
+							<li><a href="pricing-table.html">Pricing Tables</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="chat.html" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-chat3"></span><span class="mtext">Chat</span>
+						</a>
+					</li>
+					<li>
+						<a href="invoice.html" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-invoice"></span><span class="mtext">Invoice</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="mobile-menu-overlay"></div>
+
+	<div class="main-container">
+		<div class="pd-ltr-20 xs-pd-20-10">
+			<div class="min-height-200px">
+				<div class="page-header">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="title">
+								<h4>Product Detail</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-wrap">
+					<div class="product-detail-wrap mb-30">
+						<div class="row">
+							<div class="col-lg-6 col-md-12 col-sm-12">
+								<div class="product-slider slider-arrow">
+									<div class="product-slide">
+										<img src="vendors/images/product-img1.jpg" alt="">
+									</div>
+									<div class="product-slide">
+										<img src="vendors/images/product-img2.jpg" alt="">
+									</div>
+									<div class="product-slide">
+										<img src="vendors/images/product-img3.jpg" alt="">
+									</div>
+									<div class="product-slide">
+										<img src="vendors/images/product-img4.jpg" alt="">
+									</div>
+								</div>
+								<div class="product-slider-nav">
+									<div class="product-slide-nav">
+										<img src="vendors/images/product-img1.jpg" alt="">
+									</div>
+									<div class="product-slide-nav">
+										<img src="vendors/images/product-img2.jpg" alt="">
+									</div>
+									<div class="product-slide-nav">
+										<img src="vendors/images/product-img3.jpg" alt="">
+									</div>
+									<div class="product-slide-nav">
+										<img src="vendors/images/product-img4.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 col-sm-12">
+								<div class="product-detail-desc pd-20 card-box height-100-p">
+									<h4 class="mb-20 pt-20">Gufram Bounce Black</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									<div class="price">
+										<del>$55.5</del><ins>$49.5</ins>
+									</div>
+									<div class="mx-w-150">
+										<div class="form-group">
+											<label class="text-blue">quantity</label>
+											<input id="demo3_22" type="text" value="1" name="demo3_22">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-6">
+											<a href="#" class="btn btn-primary btn-block">Add To Cart</a>
+										</div>
+										<div class="col-md-6 col-6">
+											<a href="#" class="btn btn-outline-primary btn-block">Buy Now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h4 class="mb-20">Recent Product</h4>
+					<div class="product-list">
+						<ul class="row">
+							<li class="col-lg-4 col-md-6 col-sm-12">
+								<div class="product-box">
+									<div class="producct-img"><img src="vendors/images/product-img1.jpg" alt=""></div>
+									<div class="product-caption">
+										<h4><a href="#">Gufram Bounce Black</a></h4>
+										<div class="price">
+											<del>$55.5</del><ins>$49.5</ins>
+										</div>
+										<a href="#" class="btn btn-outline-primary">Read More</a>
+									</div>
+								</div>
+							</li>
+							<li class="col-lg-4 col-md-6 col-sm-12">
+								<div class="product-box">
+									<div class="producct-img"><img src="vendors/images/product-img2.jpg" alt=""></div>
+									<div class="product-caption">
+										<h4><a href="#">Gufram Bounce White</a></h4>
+										<div class="price">
+											<del>$75.5</del><ins>$50</ins>
+										</div>
+										<a href="#" class="btn btn-outline-primary">Add To Cart</a>
+									</div>
+								</div>
+							</li>
+							<li class="col-lg-4 col-md-6 col-sm-12">
+								<div class="product-box">
+									<div class="producct-img"><img src="vendors/images/product-img3.jpg" alt=""></div>
+									<div class="product-caption">
+										<h4><a href="#">Contrast Lace-Up Sneakers</a></h4>
+										<div class="price">
+											<ins>$80</ins>
+										</div>
+										<a href="#" class="btn btn-outline-primary">Add To Cart</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- js -->
+	<script src="vendors/scripts/core.js"></script>
+	<script src="vendors/scripts/script.min.js"></script>
+	<script src="vendors/scripts/process.js"></script>
+	<script src="vendors/scripts/layout-settings.js"></script>
+	<!-- Slick Slider js -->
+	<script src="src/plugins/slick/slick.min.js"></script>
+	<!-- bootstrap-touchspin js -->
+	<script src="src/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+	<script>
+		jQuery(document).ready(function() {
+			jQuery('.product-slider').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: true,
+				infinite: true,
+				speed: 1000,
+				fade: true,
+				asNavFor: '.product-slider-nav'
+			});
+			jQuery('.product-slider-nav').slick({
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				asNavFor: '.product-slider',
+				dots: false,
+				infinite: true,
+				arrows: false,
+				speed: 1000,
+				centerMode: true,
+				focusOnSelect: true
+			});
+			$("input[name='demo3_22']").TouchSpin({
+				initval: 1
+			});
+		});
+	</script>
+</body>
+</html>
